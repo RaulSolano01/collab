@@ -19,3 +19,13 @@ if __name__ == "__main__":
     except ValueError:
         print("Por favor, ingrese un número entero válido mayor que 1.")
 
+if __name__ == "__main__":
+    try:
+        numero = int(input("Ingrese un número entero: "))
+        if numero <= 1:
+            print("Por favor, ingrese un número entero mayor que 1.")
+        else:
+            siguiente_primo = nextPrime(numero)
+            print(f"El primer número primo mayor que {numero} es {siguiente_primo}.")
+    except ValueError:
+        print("Por favor, ingrese un número entero válido.")
